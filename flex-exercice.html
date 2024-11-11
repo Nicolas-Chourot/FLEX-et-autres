@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <style>
+         body {
+            background-color: #ccc;
+         }
+         .main {
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+         }
+         .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+         }
+         .sideBloc {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+            min-width: 100px;
+         }
+         .centerBloc {
+            flex: 1;
+            min-width: 100px;
+            min-height: 220px;
+         }
+         .rounded {
+            border-radius: 20px;
+         }
+         .blue {
+            background-color: blue;
+         }
+         .green {
+            background-color: green;
+         }
+         .orange {
+            background-color: orange;
+         }
+         .gold {
+            background-color: gold;
+         }
+         .red {
+            background-color: red;
+         }
+         .subBloc {
+            flex: 1;
+            min-height: 100px;
+         }
+         @media (max-width: 500px) {
+            .container {
+               display: block;
+            }
+            .centerBloc {
+               margin-top: 20px;
+               margin-bottom: 20px;
+            }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="main">
+         <div class="container">
+            <div class="sideBloc">
+               <div class="subBloc green rounded"></div>
+               <div class="subBloc blue rounded"></div>
+            </div>
+            <div class="centerBloc gold rounded"></div>
+            <div class="sideBloc">
+               <div class="subBloc red rounded"></div>
+               <div class="subBloc orange rounded"></div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

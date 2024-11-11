@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* https://www.youtube.com/watch?v=u044iM9xsWU&t=236s&ab_channel=KevinPowell
+         https://www.youtube.com/watch?v=Pl7LbpGr2uU&ab_channel=AxelParis
+         https://www.youtube.com/watch?v=UcC76tcvLgA&ab_channel=S%C3%A9bastienImbert
+         https://www.youtube.com/watch?v=_RiiOPQ5CcU&ab_channel=FormationVid%C3%A9o
+      */
+      .main {
+        border: 4px solid blue;
+        width: 50%;
+        margin: auto;
+      }
+
+      .container {
+        border: 4px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .container > * {
+        flex : 1;
+      }
+      .box {
+        min-width: 50px;
+        border: 4px solid green;
+        background-color: dodgerblue;
+        color: white;
+        font-size: 32px;
+        text-align: center;
+      }
+
+      .fullWidth {
+        flex: 100%;
+      }
+      .fixedWidth {
+        flex: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="box fixedWidth">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box fullWidth">6</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .container > * {
+        flex: 1;
+      }
+      .col {
+        background-color: rgb(238, 178, 0);
+        padding: 5px;
+        min-width: 300px;
+      }
+      .subcol {
+        background-color: rgb(238, 71, 0);
+        padding: 5px;
+        min-width: 100px;
+      }
+      @media (max-width: 600px) {
+        .container {
+          display: block;
+        }
+        .container > * {
+          margin: 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni maiores
+        expedita amet mollitia tempore ipsum aut rem possimus natus ipsa?
+        <br />
+        <br />
+        <div class="container">
+          <div class="subcol">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            blanditiis.
+          </div>
+          <div class="subcol">Lorem ipsum dolor sit amet.</div>
+          <div class="subcol">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut totam
+            aliquam minima odit ratione magnam?
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro molestiae
+        velit omnis et. Qui, dicta.
+      </div>
+      <div class="col">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
+        deleniti voluptatum illo dicta quia nulla, laboriosam quidem tenetur eum
+        expedita placeat minus tempore qui nemo molestias velit! Non numquam
+        alias, corporis officiis, culpa aliquam ut libero, vero excepturi
+        voluptates omnis quibusdam earum asperiores ipsam possimus.
+      </div>
+    </div>
+  </body>
+</html>
